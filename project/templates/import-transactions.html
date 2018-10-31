@@ -1,0 +1,56 @@
+{% extends "navigation.html" %}
+
+{% block content %}
+<h1>Import Transactions</h1>
+
+<form action="http://localhost:5000/import-transactions" method = "POST" 
+    enctype = "multipart/form-data">
+    <input type="file" name="file" />
+    <select name="account" >
+    {% for account in accounts %}
+        <option value="{{ account }}">{{ account }}</option>
+    {% endfor %}
+    </select>
+    <select name="format" >
+    {% for format in formats %}
+        <option value="{{ format }}">{{ format }}</option>
+    {% endfor %}
+    </select>
+    <input type="submit"/>
+</form>
+
+<h2>Results:</h2>
+Updated transactions: {{ updated_transaction_count }}<br/>
+New transactions: {{ new_transaction_count }}<br/>
+
+<h2>Debug</h2>
+<label>Updated Transactions</label>
+<table>
+    <tr>
+        <th>date</th>
+        <th>description</th>
+        <th>original description</th>
+        <th>amount</th>
+        <th>type</th>
+        <th>category</th>
+        <th>account</th>
+        <th>label</th>
+        <th>notes</th>
+    </tr>
+    {% for updated_transaction in debug[ 'debug_updated_transactions' ] %}
+    <tr>
+        <td>{{ updated_transaction.date }}</td>
+        <td>{{ updated_transaction.description }}</td>
+        <td>{{ updated_transaction.original_description }}</td>
+        <td>{{ updated_transaction.amount }}</td>
+        <td>{{ updated_transaction.transaction_type }}</td>
+        <td>{{ updated_transaction.category }}</td>
+        <td>{{ updated_transaction.account }}</td>
+        <td>{{ updated_transaction.labels }}</td>
+        <td>{{ updated_transaction.notes }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br/>
+{% endblock %}
+

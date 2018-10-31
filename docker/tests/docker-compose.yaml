@@ -1,0 +1,10 @@
+#version: '3.4'
+#services:
+#    money-unit-tests:
+#        container_name: "money-unit-tests"
+#        build: ../money-flask
+#        volumes:
+#            - ../../project:/project
+#        networks:
+#            - money
+#        command: bash

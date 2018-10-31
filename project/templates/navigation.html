@@ -1,0 +1,18 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }}</title>
+      {% else %}
+      <title>Why did you not provide a title?</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>
+            <a href="/">Home</a>
+            <a href="/import-transactions">Import Transactions</a>
+            <a href="/debug">Debug</a>
+       </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>

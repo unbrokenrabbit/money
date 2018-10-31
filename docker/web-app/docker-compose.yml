@@ -1,0 +1,24 @@
+version: '3.4'
+services:
+    money-flask:
+        container_name: "money-flask"
+        build: ./money-flask
+        ports:
+            - "5000:5000"
+        volumes:
+            - ../../project:/project
+        networks:
+            - money
+        command: python3 /project/app.py
+    money-mongodb:
+        container_name: "money-mongodb"
+        image: "mongo:3.6.0"
+        volumes:
+            - money-mongodb-data:/data/db
+        networks:
+            - money
+volumes:
+    money-mongodb-data:
+networks:
+    money:
+        #driver: bridge
