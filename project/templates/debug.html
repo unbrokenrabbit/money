@@ -2,35 +2,34 @@
 
 {% block content %}
 <h1>Debug</h1>
+<form action="http://localhost:5000/debug-initialize-database" method="post">
+    <button name="debug_initialize_database_button" value="debug_initialize_database_button">Initialize Database</button>
+</form>
 <form action="http://localhost:5000/debug-remove-all-transactions" method="post">
     <button name="debug_remove_all_transactions_button" value="debug_remove_all_transactions_button">Remove All Transactions</button>
 </form>
 <h2>Misc</h2>
 Transactions Removed: {{ transactions_removed_count }}<br/>
-<h1>Transactions</h1>
+<h1>Transactions ({{ transactions|length }})</h1>
 <table>
     <tr>
         <th>instance</th>
+        <th>bucket</th>
+        <th>bucket_status</th>
         <th>account</th>
-        <th>type</th>
         <th>date</th>
         <th>amount</th>
         <th>description</th>
-        <th>original_description</th>
-        <th>category</th>
-        <th>notes</th>
     </tr>
     {% for transaction in transactions %}
     <tr>
         <td>{{ transaction.instance }}</td>
+        <td>{{ transaction.bucket }}</td>
+        <td>{{ transaction.bucket_status }}</td>
         <td>{{ transaction.account }}</td>
-        <td>{{ transaction.type }}</td>
         <td>{{ transaction.date }}</td>
         <td>{{ transaction.amount }}</td>
         <td>{{ transaction.description }}</td>
-        <td>{{ transaction.original_description }}</td>
-        <td>{{ transaction.category }}</td>
-        <td>{{ transaction.notes }}</td>
     </tr>
     {% endfor %}
 </table>

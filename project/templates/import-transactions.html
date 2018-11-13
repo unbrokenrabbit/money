@@ -6,16 +6,6 @@
 <form action="http://localhost:5000/import-transactions" method = "POST" 
     enctype = "multipart/form-data">
     <input type="file" name="file" />
-    <select name="account" >
-    {% for account in accounts %}
-        <option value="{{ account }}">{{ account }}</option>
-    {% endfor %}
-    </select>
-    <select name="format" >
-    {% for format in formats %}
-        <option value="{{ format }}">{{ format }}</option>
-    {% endfor %}
-    </select>
     <input type="submit"/>
 </form>
 

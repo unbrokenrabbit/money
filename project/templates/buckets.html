@@ -1,0 +1,152 @@
+{% extends "navigation.html" %}
+
+{% block content %}
+<h1>Buckets</h1>
+<h2>Add Bucket</h2>
+<form action="http://localhost:5000/add-bucket" method="POST">
+    <label>Name</label>
+    <br/>
+    <input type="text" name="bucket_name" />
+    <br/>
+    <label>Description Pattern (regex)</label>
+    <br/>
+    <input type="text" name="bucket_pattern" />
+    <br/>
+    <label>account</label>
+    <br/>
+    <select name="bucket_account" >
+    {% for account in accounts %}
+        {% if bucket_import_settings[ 'last_account' ] == account %}
+            <option value="{{ account }}" selected="selected">{{ account }}</option>
+        {% else %}
+            <option value="{{ account }}">{{ account }}</option>
+        {% endif %}
+    {% endfor %}
+    </select>
+    <br/>
+    <label>direction (income, expense)</label>
+    <br/>
+    <select name="bucket_direction" >
+        {% if bucket_import_settings[ 'last_direction' ] == 'income' %}
+            <option value="income" selected="selected">income</option>
+        {% else %}
+            <option value="income">income</option>
+        {% endif %}
+        {% if bucket_import_settings[ 'last_direction' ] == 'expense' %}
+            <option value="expense" selected="selected">expense</option>
+        {% else %}
+            <option value="expense">expense</option>
+        {% endif %}
+    </select>
+    <br/>
+    <input type="submit" value="ADD BUCKET" />
+</form>
+<h2>Export Buckets</h2>
+<form action="{{ url_for( 'export_buckets' ) }}" method = "POST" enctype = "multipart/form-data">
+    <input type="submit" value="Export Buckets" />
+</form>
+<h2>Import Buckets</h2>
+<form action="/import-buckets" method = "POST" 
+    enctype = "multipart/form-data">
+    <input type="file" name="file" />
+    <input type="submit" name="Import"/>
+</form>
+<!--
+<h2>Unapproved Transactions</h2>
+<label>table with list of transactions that have been matched to existing buckets.  User must select and approve all correctly allocated buckets.</label>
+<br/>
+<table>
+    <tr>
+        <th>instance</th>
+        <th>bucket</th>
+        <th>bucket status</th>
+        <th>account</th>
+        <th>type</th>
+        <th>date</th>
+        <th>amount</th>
+        <th>description</th>
+        <th>original description</th>
+        <th>category</th>
+        <th>notes</th>
+    </tr>
+    {% for transaction in unapproved_transactions %}
+    <tr>
+        <td>{{ transaction.instance }}</td>
+        <td>{{ transaction.bucket }}</td>
+        <td>{{ transaction.bucket_status }}</td>
+        <td>{{ transaction.account }}</td>
+        <td>{{ transaction.type }}</td>
+        <td>{{ transaction.date }}</td>
+        <td>{{ transaction.amount }}</td>
+        <td>[{{ transaction.description }}]</td>
+        <td>{{ transaction.original_description }}</td>
+        <td>{{ transaction.category }}</td>
+        <td>{{ transaction.notes }}</td>
+    </tr>
+    {% endfor %}
+</table>
+-->
+<h2>Unbucketed Transactions ({{ unbucketed_transactions|length }})</h2>
+<table>
+    <tr>
+        <th>instance</th>
+        <th>bucket</th>
+        <th>bucket status</th>
+        <th>account</th>
+        <th>type</th>
+        <th>date</th>
+        <th>amount</th>
+        <th>description</th>
+        <th>original description</th>
+        <th>category</th>
+        <th>notes</th>
+    </tr>
+    {% for transaction in unbucketed_transactions %}
+    <tr>
+        <td>{{ transaction.instance }}</td>
+        <td>{{ transaction.bucket }}</td>
+        <td>{{ transaction.bucket_status }}</td>
+        <td>{{ transaction.account }}</td>
+        <td>{{ transaction.type }}</td>
+        <td>{{ transaction.date }}</td>
+        <td>{{ transaction.amount }}</td>
+        <td>[{{ transaction.description }}]</td>
+        <td>{{ transaction.original_description }}</td>
+        <td>{{ transaction.category }}</td>
+        <td>{{ transaction.notes }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br/>
+<h2>Buckets</h2>
+<label>table of all buckets</label>
+<br/>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description Pattern</th>
+        <th>Account</th>
+        <th>Income vs Expense</th>
+        <th></th>
+    </tr>
+    {% for bucket in buckets %}
+    <tr>
+        <td>{{ bucket[ 'id' ] }}</td>
+        <td>{{ bucket[ 'name' ] }}</td>
+        <td>{{ bucket[ 'pattern' ] }}</td>
+        <td>{{ bucket[ 'account' ] }}</td>
+        <td>{{ bucket[ 'direction' ] }}</td>
+        <td>
+            <form action="http://localhost:5000/remove-bucket" method="POST">
+                <input type="submit" name="remove-bucket-button.{{ bucket[ 'id' ] }}" value="REMOVE BUCKET" />
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+<br/>
+<h2>Debug</h2>
+{{ debug }}
+{% endblock %}
+

@@ -14,4 +14,5 @@ RUN pip3 install flask
 RUN pip3 install pymongo
 RUN pip3 install plotly
 RUN pip3 install matplotlib
+RUN pip3 install mysql-connector-python
 

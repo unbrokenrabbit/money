@@ -15,10 +15,42 @@ services:
         image: "mongo:3.6.0"
         volumes:
             - money-mongodb-data:/data/db
+            - money-mongodb-config:/data/configdb
+        networks:
+            - money
+    money-mysql:
+        container_name: "money-mysql"
+        image: "mysql:8.0"
+        environment:
+            - MYSQL_ROOT_PASSWORD=badpassword
+            - MYSQL_DATABASE=money_db
+            - MYSQL_USER=money_user
+            - MYSQL_PASSWORD=money_password
+        #ports:
+        #    - "3306:3306"
+        volumes:
+            - money-mysql-test-data:/var/lib/mysql
+        networks:
+            - money
+    money-mysql-test:
+        container_name: "money-mysql-test"
+        image: "mysql:8.0"
+        environment:
+            - MYSQL_ROOT_PASSWORD=badpassword
+            - MYSQL_DATABASE=money_db
+            - MYSQL_USER=money_user
+            - MYSQL_PASSWORD=money_password
+        #ports:
+        #    - "3307:3306"
+        volumes:
+            - money-mysql-data:/var/lib/mysql
         networks:
             - money
 volumes:
     money-mongodb-data:
+    money-mongodb-config:
+    money-mysql-data:
+    money-mysql-test-data:
 networks:
     money:
         #driver: bridge

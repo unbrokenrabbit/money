@@ -1,0 +1,5401 @@
+{
+    "buckets": [
+        {
+            "id": "",
+            "name": "expense_bill_car",
+            "pattern": ".*FORD MOTOR CR.+FORDCREDIT.*",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_utility_power",
+            "pattern": ".*COMMONWEALTH ED.*",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_utility_water",
+            "pattern": ".*VILLAGE OF ALGON.*",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_mortgage",
+            "pattern": ".*WF HOME MTG.*",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_insurance_auto_home",
+            "pattern": ".*CHECK.+SafeCo.+INSPayment.*",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_insurance_auto_home",
+            "pattern": "CHECK 856",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_insurance_auto_home",
+            "pattern": "CHECK 855",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_insurance_auto_home",
+            "pattern": "CHECK 870",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_preschool",
+            "pattern": ".*CHECK 857.*",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_preschool",
+            "pattern": "CHECK 858  ",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_preschool",
+            "pattern": "CHECK 865",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_preschool",
+            "pattern": "CHECK 863",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_preschool",
+            "pattern": "CHECK 862",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_preschool",
+            "pattern": "CHECK 861",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_preschool",
+            "pattern": "CHECK 872",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_preschool",
+            "pattern": "CHECK 869",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_preschool",
+            "pattern": "CHECK 867",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": ".*Online Transfer from.+CHK.+4774.*",
+            "account": "checking_bills",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": ".*ONLINE TRANSFER FROM.+\\.\\.\\.4774.*",
+            "account": "checking_bills",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "Payment to Chase card.*",
+            "account": "checking_bills",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": ".*Payment to Chase card ending in 5444.*",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": ".*PAYMENT TO CHASE CARD ENDING IN 5444.*",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "Payment to Chase card ending in.*",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "Online Transfer to.*",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": ".*PAYMENT TO CHASE CARD ENDING IN 0545.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": ".*Online Transfer to.+MMA.+\\.\\.\\.6356.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": ".*Online Transfer to.+CHK.+\\.\\.\\.4717.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": ".*Payment to Chase card ending in 2121.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": ".*Payment to Chase card ending in 0545.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": ".*ONLINE TRANSFER TO.*CHK.*\\.\\.\\.4717.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": ".*ONLINE TRANSFER TO.*MMA.*\\.\\.\\.6356.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "ONLINE TRANSFER TO SAV.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "ONLINE TRANSFER TO.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "Online Transfer to.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "Payment to Chase card ending in-545.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "Payment to Chase card ending in.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": ".*ONLINE TRANSFER FROM.+\\.\\.\\.6356.*",
+            "account": "checking_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": ".*Online Transfer from MMA \\.\\.\\.6356.*",
+            "account": "checking_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "ONLINE TRANSFER TO SAV.*",
+            "account": "checking_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "Online Transfer from.*",
+            "account": "checking_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_misc",
+            "pattern": ".*INTEREST PAYMENT.*",
+            "account": "checking_bills",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_misc",
+            "pattern": ".*Chase QuickPay Electronic Transfer.+from.*",
+            "account": "checking_bills",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_misc",
+            "pattern": ".*REMOTE ONLINE DEPOSIT.*",
+            "account": "checking_bills",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_misc",
+            "pattern": "QuickPay with Zelle payment from CHRISTINA C MAYS.*",
+            "account": "checking_bills",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_misc",
+            "pattern": "QuickPay with Zelle payment fromCHRISTINA C MAYS.*",
+            "account": "checking_bills",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_misc",
+            "pattern": "QuickPay.*with.*Zelle.*payment.*fromCHRISTINA.*C.*LAWSON.*7861575833",
+            "account": "checking_bills",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_predictable",
+            "pattern": ".*KRANZE TECHNOLOG QUICKBOOKS.*",
+            "account": "checking_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_predictable",
+            "pattern": ".*CL SCHOOL DISTRI PAYROLL.*",
+            "account": "checking_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*ATM WITHDRAWAL.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*NON-CHASE ATM WITHDRAW.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*Chase QuickPay Electronic Transfer.+to CLUTTER FREE BY CHRISSY.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*QuickPay with Zelle payment to.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*Chase QuickPay Electronic Transfer.+to Danielle.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*WITHDRAWAL.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*PAYPAL.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1413.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1425.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1426.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1427.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1428.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1429.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1430.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1431.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1432.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1433.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1434.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1436.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1437.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1438.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1439.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1440.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1441.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK.+APSA/DPSF.+CHECKPAYMT.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1443.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1444.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1445.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1447.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1448.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1449.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1450.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1451.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1453.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1454.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1455.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK.+FSF/FFRF.+CHECKPAYMT.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1457.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1458.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1459.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1460.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1461.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1462.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1463.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1464.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1465.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1466.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1467.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1468.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1469.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1470.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1471.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1472.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1473.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1474.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1476.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1477.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1478.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1479.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1480.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1481.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1482.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1483.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1484.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1485.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1486.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1487.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1488.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1489.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1490.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1302.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1303.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1304.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1305.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1306.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1307.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1308.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1309.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1310.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1311.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHECK 1313.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CHECK 1346",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CHECK 1344",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CHECK 1345",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CHECK 1343",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CHECK 1335",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "Chase QuickPay Electronic Transfer 6322559465 to CLUTTER FREE BY",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "VENMO.*PAYMENT.*1364738568.*WEB.*ID:.*3264681992",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "VENMO.*PAYMENT.*1314660787.*WEB.*ID:.*3264681992",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "Chase QuickPay Electronic Transfer 6093957054 to CLUTTER FREE BY",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CHECK 1475",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CHECK 1456",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "income_misc",
+            "pattern": ".*ATM CHECK DEPOSIT.*",
+            "account": "checking_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_misc",
+            "pattern": ".*ATM CASH DEPOSIT.*",
+            "account": "checking_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_misc",
+            "pattern": ".*INTEREST PAYMENT.*",
+            "account": "checking_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_misc",
+            "pattern": ".*REMOTE ONLINE DEPOSIT.*",
+            "account": "checking_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_misc",
+            "pattern": "DEPOSIT ID NUMBER 449516",
+            "account": "checking_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_misc",
+            "pattern": "DEPOSIT.*ID.*NUMBER.*449516",
+            "account": "checking_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "expense_bill",
+            "pattern": ".*FORD CREDIT.+FORDCREDIT.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_insurance_auto_home",
+            "pattern": ".*CHECK.+SafeCo.+INSPayment.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_fee",
+            "pattern": ".*INSUFFICIENT FUNDS FEE.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "TARGET.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "AMAZON MKTPLACE PMTS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "AMC LAKE IN HILLS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "SPIRIT HALLOWEEN.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "FANDANGO.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "WALGREENS\\.COM PHOTO.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "SHUTTERFLY",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "USPS PO.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "Amazon\\.com",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "TOMS FARM MARKET FFB",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "PAYPAL.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "THE UPS STORE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "HAUTLK RACK.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "COST PLUS WLD.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CITY OF LAKE GENEVA",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "WALGREENS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "THE PAMPERED CHEF",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "TIMBER RIDGE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "PUMP IT UP.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "TOYS R US.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "GAMESTOP.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*Baby Jesses Hospital",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "BATH.+BODY WORKS\\.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "MICHAELS STORES.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "HOMEGOODS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "WAL-MART.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "FOCUSATTACK",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "Etsy\\.com.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "SAFETYSIGN\\.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "DOLLAR TREE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "GEEKNET INC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "WHITE HOUSE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CINEMA 12 MOVIES",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "MCMASTER-CARR",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "MSG CHI THEATRE REST",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "NO 1 CLEANERS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*BLOCK 37",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "US WEEKLY",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "NARS COSMETICS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "MEIJER.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "VENMO",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "WALMART\\.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "EB GAMES.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*FRIENDLY PLUMBING",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "DIRECT VAPE LLC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CITY MART",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "BED BATH.*BEYOND.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "PARTY CITY",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "PAPER MART",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*WALMART",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "TOYSRUS-BABIESRUS\\.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "RODANFI\\*LDS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CRYSTAL LAKE PARK DISTRIC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "MAIN EVENT HOFE-RETAIL",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "JARED-GALLERIA.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "FEDEXOFFICE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "BUY BUY BABY.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "ABM PARKING 60 E RANDOLPH",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "FRESH FLOWER MARKET",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "Gibsons Bar- 8559073168",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "AMZN Mktp US",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "ETSY.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*SMALLWOODHOME",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "2CO.COM.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "Scholastic Reading Club",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "LIFETOUCH PRESCHOOL.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "PP.IMAGESSHERR",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "MICHAELS GIFT CARDS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "PINSTRIPES",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "LUCKYVITAMIN.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "TOMS FARM.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "BOURBON STREET BLUES",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "NASHVILLE PAINTBALL, INC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "HUNTLEY PARK WEB",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "ULTA.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "ACE HARDWARE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "THE HOME DEPOT.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*Cary Park District",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "DICK'S CLOTHING&SPORTING",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "JUICE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "COSTCO WHSE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*CHICAGO CONCESSIONS,",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "VILLAGE OF ROSEMONT",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "TXRWIZARDWORLD.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*AMERICAN HEART",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*ALBANY HOUSE BED & BR",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "ALEXS DRIVE IN",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*MARILYN JACOBS DESIGN",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "JIFFY LUBE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "Audible",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "Dick'sSportingGoods.com",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "DISCOVERY CENTER MUSEUM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "UBER.*TRIP.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "BLUSH SALON AND SPA",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "UDEMY ONLINE COURSES",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*TEAMFANSHOP",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "QUIP NYC INC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "ELK GROVE PARK DISTRICT",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "HAMPTON INN.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "JCPENNEY.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "RESIDENCE INN DES MOIN.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "IOWA BOOK LLC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "92 TOWN CORP",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "URBAN AIR.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "Ticketmaster",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "MAURICE'S.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "OFFICEMAX.DEPOT.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*SHOPDISNEY.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "HOMEDEPOT.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "BUILDABEAR WRKSHP.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "ONEPLUS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "UNCOMMONGOODS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "BEST BUY.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*HOLTZLEATHER",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "THE HEROS EDGE COLLECT.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*BANZA LLC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CONTAINERSTORE.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "HOTELS.COM.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CONTAINERSTORE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "Thirty-One Gifts, LLC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "GEEKNET, INC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "PARKINGMETER1.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "BERLAND'S.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "AMC.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "GEORGIOS CHICAGO PIZZERIA",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "COLOR ME MINE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "UPTOWN CLEANER",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "HIGHLIGHTS FOR CHILDRE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "HUNTLEY PARK DISTRICT",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "HARBOR FREIGHT.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "WPY.PAWS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "PANGBURN PHILOSOPHY",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "AMERICINN NEW LONDON",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CRATE&BARREL.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "VIVID SEATS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "WOLF RIVER TRIPS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "LIVINGSOCIAL.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "RUBBERSTAMPSCOM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "SIMPLE CANVAS PRINTS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CANVAS ON THE CHEAP",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "MAIN STREET BICYCLES",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "DYSON.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "NESTLE THC.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CLAIRES BOUTIQUE INC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "WHISPERING HILLS NURSE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "NEBIA.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*DYLANS CANDY",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "SINGLE DIGITS INTERNET",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "HERTZ RENT-A-CAR",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "UNITED.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "LOT E",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "SHERATON HOTELS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "TPA HOSPITALITY PARTNERS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "SHORTY'S GROCERY.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "Chase QuickPay Electronic Transfer 6322559465 to CLUTTER FREE BY",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "REGAL CINEMAS SHOWPLACE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "ICSOLUTIONS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "J MILLER HANDCRAFTED",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "LEGACY INMATE COMMUNICATI.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "WORLDMARKET.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "JOANN STORES.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "SAM HARRIS MEDIA.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "LAZ PARKING.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*THE HAMPTON SOCIAL",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "PIER 1 IMPORTS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*LAKESIDE CENTER.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "4TE.SOS INTERNET SAFE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "C2E2 CHICAGO COMIC.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*DBM GAG GIFTS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "RFC WOODFIELD MALL.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CRYS MART INC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "HOTEL BAKER",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "PHEASANT RUN RESORT.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*Teachers in Cambodia",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "AROUND THE CORNER CAND.",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "WM SUPERCENTER.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "ABM PARKING.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "PARK CHICAGO MOBILE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "1-800-FLOWERS.COM.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CHUCK E CHEESE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "GOOGLE .Daria Darma",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "K1 SPEED.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "TOYSRUS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*HEADSPACE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CVS.PHARMACY.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "MCMART INC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "LEE VALLEY TOOLS LTD.",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "BestBuyCom.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "UCM PARKING B",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "STEAMGAMES.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "TILLYS INTERNET-USD",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "SAFERINGZ",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*FANATICS.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*NEW KIDS ON BLOCK",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "HAYNEEDLE INC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "SPORTSKIDS.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "POTTERY BARN KIDS E-CO",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "MAN CRATES STORE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "FORMALLY MODERN TUXEDO",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "AT HOME STORE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "HOTEL ST PIERRE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "BATTLE HOUSE LASER COM.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*SMILE SCIENCES",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "OFFICE DEPOT.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*NEW AGE NINJA COR.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "FACEBK.*BraveBeginning",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "MMS UCMCCENCAF00462085",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "BARNES & NOBLE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*LEGOLAND.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": ".*Color Me Mine",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "GIRL SCOUT COOKIES",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "LIFEVAC LLC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "eReplacementparts.com",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "Rakuten.com",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "MICHAELS.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": ".*CHECK 1312.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "CHECK 1315.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "CHECK 1349",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "CHECK 1348",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "CHECK 1338",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "CHECK 1334",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "CHECK 1333",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "CHECK 1357",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_home_repair",
+            "pattern": ".*CHECK 1314.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_home_repair",
+            "pattern": "CHECK 1317  ",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_home_repair",
+            "pattern": "CHECK 1347",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_home_repair",
+            "pattern": "CHECK 1342",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_home_repair",
+            "pattern": "CHECK 1341",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_home_repair",
+            "pattern": "CHECK 1340",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_home_repair",
+            "pattern": "CHECK 1339",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_home_repair",
+            "pattern": "CHECK 1337",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_home_repair",
+            "pattern": "CHECK 1336",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_home_repair",
+            "pattern": "CHECK 1332",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill",
+            "pattern": "HLU.Hulu.*",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill",
+            "pattern": "AT.amp;T.BILL PAYMENT.*",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill",
+            "pattern": "ORKIN  LLC.*",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "MONTARRA GRILL",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "TACO BELL.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "POTBELLY.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "COUNTRY DONUTS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "NAF NAF GRILL.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "MORETTIS RISTORANTE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "CHUBBY'S",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "SHORT STACKS LTD",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "BURGERFI-GLENVIEW",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "CHIPOTLE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "THE ALGONQUIN SUB SHOP",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "PORTILLOS HOT DOGS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "MCDONALD'S.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "STARBUCKS STORE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "PANERA BREAD.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "STEAK-N-SHAKE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "THE TEXAN BBQ",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "5GUYS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "HOULIHANS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "JIMMY JOHNS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "Simple Cafe - Lake Geneva",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "CULVER'S.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": ".*EGG HARBOR.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "JOSH'S HOT DOGS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "RED ROBIN.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": ".*M SUPPER CLUB",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "JD'S Q.*BREW",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "WOODS CREEK TAVERN",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "DOMINO'S.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "1776 RESTAURANT",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "RED MANGO.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "PORT EDWARD",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "MADRAS CAFE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "LATINCITY",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "BOLD AMERICAN FARE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "EL MOLINO RESTAURANT",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "BONEFISH.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "DUNKIN.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "FIREHOUSE SUBS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "DD/BR.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "PORTILLOS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "SUMMER HOUSE SANTAMONICA",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "CHICK-FIL-A.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "BUFFALO WILD WINGS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "The Saddle Room LLC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "THE HICKORY PIT",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "CORNER BAKERY.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "Dario's",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "TST\\* MONTARRA",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "GALATIS HIDEAWAY",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "312 CHICAGO",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "LA TASCA TAPAS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "VILLAGE SQUIRE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "ROSATIS PIZZA.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "DOG WALK",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "KFC.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "COOPERS HAWK WINERY",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "CHEESECAKE SCHAUMBURG",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "MOD PIZZA.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "SCOOPS ICE CREAM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "POPEYE'S LAKE GENEVA",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "JONIS DINER LLC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "SUN WAH BAR BQ BROAD",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "RIVER STREET TAVERN",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "DUNDEE DAIRY QUEEN",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "PUB 47 GRILL",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": ".*SOUTHERN BELLES",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "BENEDICT'S LA STRATA",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": ".*RIVERBOTTOM ICE CREAM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "OSCARSTACOSHOP8",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "CULVERS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "JOSEPHINE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "FROTHY MONKEY",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "CORNER MARKET",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": ".*COOK STREET COFFEE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "WENDY'S.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "LETS YO",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "FARMHOUSE ON NORTH",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": ".*PERKNPICKLE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "SHASHBURGER.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "SMASHBURGER.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "KOBE JAPANESE RESTAURA.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "CHICAGO HOT BREAD INC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "THATS AMORE PIZZA INC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "BASKIN.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "NOODLES & CO.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": ".*REAL URBAN BBQ HP",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "JERSEY MIKES.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": ".*DUKE S ALEHOUSE AND",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "TIKI TERRACE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "CRAZY CRAB.",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "MCALISTER'S DELI.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "GAYLORD INDIA RESTAURANT",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "RV CONCESSIONS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": ".*COTTAGE ON THE B.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "MAMAS DELI",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "B BOPS EAST",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "DC COBBS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "THE MELTING POT.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "PAPA JOHN'S.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "THE FREEZE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": ".*KUMA S CORNER.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "EL PAISA ALEGRE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "ALGONQUIN DAIRY QUEEN",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "CALI PIZZA KITC INC.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "RAMMYS SUB CONTRACTORS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "BULL DOG ALE HOUSE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "CAFE 20",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "RED LOBSTER.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "Crystal Lake Rib House",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "BRUNCHCAFE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "SACCOS OLD WORLD PIZZA",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "EINSTEIN BROS BAGELS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "HAPPY JACKS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "VICCINOS PIZZA.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "RETRO BISTRO.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "BENIHANA.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "MISOYA",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "JERSEY MKE'S.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "EL TEQUILA",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": ".*CRAZY CRAB",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "WHITE CASTLE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "Morettis Ristorante & Piz.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "MONICA'S RESTAURANT",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": ".*BOLONEY'S SANDWICH.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": ".*CARLOS TEQUILA GRILL",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "JEONJU RESTAURANT INC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "BUONA BEEF.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "WHICH WHICH",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "WHICH WICH",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "FAMOUS FOOTWEAR.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "EINSTEIN BROS-ONLINE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "EL FUEGO",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "POPEYES CHICKEN",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "ZAZA TRATTORIA",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "THATS AMORE PIZZA",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "KYOTO RESTAURANT",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "KOOKERS RESTAURANT",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "JAMESONS CHARHOUSE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "SUGAR HILLS BAKERY",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "ITALIAN VILLAGE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "WOK N FIRE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "GEORGE STREET PUB",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "TWIN PEAKS WHEELING",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "TANDOORI KARAHI HOUSE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "ROSATI'S PIZZA",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "ROSATI`S PIZZA",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "MENCHIE`S FROZEN YOGURT",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "CUCINA BELLA",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "MARCOS PIZZA.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "PIE FIVE PIZZA.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "BUFFALO WINGS AND RINGS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "SBARRO.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "HALF DAY BREWING.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "PABLOS MEXICAN RESTAUR.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "TONY'S CAFE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "BUONA.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": ".*THE ONION PUB AND BR",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "BLUEROOT",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "BLEUROOT",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "COOPER'S HAWK.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "COUNTY FARM BAGELS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "TOMMY'S RED HOTS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "ORCHARD MEATS DELI & WINE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_groceries",
+            "pattern": "JEWEL.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_groceries",
+            "pattern": "CRYSTAL LAKE HEALTH FOODS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_groceries",
+            "pattern": "FRESH THYME.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_groceries",
+            "pattern": "TRADER JOE'S.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_groceries",
+            "pattern": "MARIANOS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_groceries",
+            "pattern": "SAMSCLUB.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_groceries",
+            "pattern": "BUTCHER ON THE BLOCK",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_groceries",
+            "pattern": "KROGER.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_groceries",
+            "pattern": "HY VEE.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_groceries",
+            "pattern": "FRESH MKT.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_groceries",
+            "pattern": "BLUE APRON ORDER",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_fuel_auto",
+            "pattern": "THORNTONS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_fuel_auto",
+            "pattern": "SPEEDWAY.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_fuel_auto",
+            "pattern": "SHELL OIL.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_fuel_auto",
+            "pattern": "BP#8941106MCHENRY BP 154",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_fuel_auto",
+            "pattern": "EXXONMOBIL.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_fuel_auto",
+            "pattern": "BP.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_fuel_auto",
+            "pattern": "PHILLIPS 66.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_fuel_auto",
+            "pattern": "MARATHON PETRO.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_fuel_auto",
+            "pattern": "KWIK TRIP.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_fuel_auto",
+            "pattern": "V4 GASOLINE INC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_fuel_auto",
+            "pattern": "ELM STREET CITGO",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "income_misc",
+            "pattern": "AMAZON MKTPLACE PMTS",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "expense_media",
+            "pattern": "Amazon Digital Svcs",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_media",
+            "pattern": "Amazon Video On Demand",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_media",
+            "pattern": "PLAYSTATION NETWORK",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_media",
+            "pattern": "VISIT PATREON\\.COM/INFO",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_media",
+            "pattern": "Audible US",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_media",
+            "pattern": "PlaystationNetwork",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_media",
+            "pattern": "Amazon Services-Kindle",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_media",
+            "pattern": "APL\\* ITUNES\\.COM/BILL",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_media",
+            "pattern": "MICROSOFT.*XBOX",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_media",
+            "pattern": "Prime Video.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_media",
+            "pattern": "Amazon MP3.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_media",
+            "pattern": "APL.ITUNES.COM.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_media",
+            "pattern": "PATREON. MEMBERSHIP",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_media",
+            "pattern": ".*PLAYSTATIONNETWORK",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_media",
+            "pattern": "GOOGLE .Pocket Casts",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_comics",
+            "pattern": "BEYOND TOMORROW COMICS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_comics",
+            "pattern": "MODERN AGE COMICS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_comics",
+            "pattern": "LONE STAR COMICS WEB",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_comics",
+            "pattern": "BEYOND TOMORROW.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "EXPRESS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "OLD NAVY.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "carters Inc\\.",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "DSW ALGONQUIN COMMONS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "JCPENNEY\\.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "LEMS SHOES.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "HANES\\.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "WWW\\.KOHLS\\.COM.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "A EAGLE OUTFTR.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "KOHLS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": ".*DULUTH TRADING CO",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": ".*SOSINTERNET VEHICLE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "KOHL'S.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "LEVI's.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "HM.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "HOLLISTER",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "J CREW",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "TOBI.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "PAYLESS SHOES.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "LEVI'S.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "NORTHFACE VF OUTDOOR",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": ".*AMERICAN TALL",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "maurices.com",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "carters, Inc.",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "TRADEWIND COVE BIRKENSTOC.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "CROCS INC CROCS.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "ACHIEVE FOOTWEAR",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "VICTORIASSECRET.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "TITLE NINE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "TOMS.COM.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "LIDS.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "ADIDAS ONLINE STORE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "VIBRAM.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "LLBEAN-DIRECT",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "STRIDERITE.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "VICTORIA'S SECRET.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "GAP ONLINE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "STRIDE RITE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "VENUS.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "MACY.S .COM.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "DSW.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "DULUTH TRADING.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "CARTER'S.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "B&N BOOK UNIV OF CHIC4919",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": "EDDIEBAUER.COM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "OLD NAVY.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "EXPRESS.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "TARGET.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "JCPENNEY\\.COM",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "HAUTLK RACK.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "HANES.COM",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "MICHAELS STORES.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "A EAGLE OUTFTR.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "LEMS SHOES.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "Amazon\\.com",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "TOYS R US.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "TOYSRUS-BABIESRUS\\.COM",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "KOHLS.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "LEVI'S.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "AMZN Mktp US",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "PAYLESS SHOES.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "NORTHFACE VF OUTDOOR",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "THE HOME DEPOT.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "DICK'S CLOTHING&SPORTING",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "JCPENNEY.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "MAURICE'S.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "RODANFI.LDS.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "Thirty-One Gifts, LLC",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "DSW.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "TITLE NINE",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "WAL-MART.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "LIDS.COM",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "ADIDAS ONLINE STORE",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "STRIDERITE.COM",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "TOMS.COM.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "GAP ONLINE",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": ".*DULUTH TRADING CO",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "FAMOUS FOOTWEAR.COM",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "carters, Inc.",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "VENUS.COM",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "LLBEAN.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": ".*FAMILY FUN MAGAZIN.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "SPORTSKIDS.COM",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "MAN CRATES STORE",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "B&N BOOK UNIV OF CHIC.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "J CREW",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "expense_hardware",
+            "pattern": "THE HOME DEPOT.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_hardware",
+            "pattern": "LOWES.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "Payment Thank You - Web",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "Payment Thank You-Mobile",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_swimming",
+            "pattern": "BEAR PADDLE SWIM SCHOOL.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "Payment Thank You - Web",
+            "account": "credit_bills",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "Payment Thank You-Mobile",
+            "account": "credit_bills",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "expense_bill",
+            "pattern": "VILLAGE OF ALGONQUIN.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_digital_service",
+            "pattern": "Amzn CldDrv Tier",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_digital_service",
+            "pattern": "AMZN CLDPLYR PREM",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_digital_service",
+            "pattern": "AmazonPrime Membership",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_digital_service",
+            "pattern": "AMZON Drive.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_digital_service",
+            "pattern": "AMZN.*Drive.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "PEDIATRIC SPECIALIS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "FAMILY MEDICINE FOR MC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "N SHORE FPA OTOLOGYEV.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "NORTHSHORE UNIVERSITY HEA",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "GOOD SHEPHERD HOSPITAL",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "CHECK 1338",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "KID'S FIRST PED DENTIST",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "CHECK 1334",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "DERICK DERMATOLOGY LLC",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "RANDY J HALIHAN.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "BRAIN&BEHAVIOR RESEARCH",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "NORTHWEST EYECARE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "MERCY MYCHART",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_medical",
+            "pattern": "UNIVERSITY OF CHICAGO",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_internet",
+            "pattern": "COMCAST CHICAGO",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_media",
+            "pattern": "APL\\* ITUNES\\.COM/BILL",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_media",
+            "pattern": "Netflix.com",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_media",
+            "pattern": "NETFLIX.COM",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_diet",
+            "pattern": "DR FUHRMAN ONLINE",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_insurance_auto_home",
+            "pattern": "AUTO-OWNERS INSURANCE",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_auto",
+            "pattern": ".*ILSecofStateSFee",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_auto",
+            "pattern": ".*SOSINTERNET VEHICLE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_auto",
+            "pattern": "CASEYS WEST BRANCH.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_auto",
+            "pattern": "BUSS FORD.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_auto",
+            "pattern": "MIDAS.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_auto",
+            "pattern": "IL TWY-IPASS FULFILLMENT",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_auto",
+            "pattern": "WICKSTROM AUTO GROUP",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_home_cleaning",
+            "pattern": "Jasna Ligueno",
+            "account": "checking_savings",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "income_misc",
+            "pattern": "INTEREST PAYMENT",
+            "account": "checking_savings",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_misc",
+            "pattern": "REMOTE ONLINE DEPOSIT #1",
+            "account": "checking_savings",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_phone",
+            "pattern": "AT&T*BILL PAYMENT",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_phone",
+            "pattern": "AT&T.BILL PAYMENT",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_school",
+            "pattern": "ICP.Stretch-n-Grow of McH",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "ONLINE TRANSFER FROM.*",
+            "account": "checking_savings",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "Online Transfer from.*",
+            "account": "checking_savings",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "transfer_internal",
+            "pattern": "Online Transfer to.*",
+            "account": "checking_savings",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_utility_gas",
+            "pattern": "NICOR GAS BILL",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_digital_media",
+            "pattern": "THE GREAT COURSES PLUS",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_groceries",
+            "pattern": "MEIJER.*",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "expense_home_repair",
+            "pattern": "Aliance Disaster Kleenup",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_home_repair",
+            "pattern": "Alliance Disaster Kleenup",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_home_repair",
+            "pattern": "PLATINUM CARE SERVICES",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_home_repair",
+            "pattern": "HUEMANN WATER MANAGEME.*",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_home_repair",
+            "pattern": "JETTS HEATING AND AIR",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_preschool",
+            "pattern": "CHECK 1350",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_preschool",
+            "pattern": "CHECK 1330",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_preschool",
+            "pattern": "CHECK 1353",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_preschool",
+            "pattern": "CHECK 1351",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_preschool",
+            "pattern": "CHECK 872",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_dining",
+            "pattern": "SMASHBURGER.*",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_mis",
+            "pattern": "RANDALL OAKS PARK",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_ipass",
+            "pattern": "IL TOLLWAY AUTO REPLENISH",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_charity",
+            "pattern": "ST JUDE P2P",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_charity",
+            "pattern": "DEPAUL DEVELOPMENT",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_charity",
+            "pattern": "Int'l Rescue Committee",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_clothing",
+            "pattern": ".*AMERICAN TALL",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "ACHIEVE FOOTWEAR",
+            "account": "credit_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_ipass",
+            "pattern": "IL TOLLWAY-WEB",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_media",
+            "pattern": "PATREON.PLEDGE",
+            "account": "credit_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_digital_service",
+            "pattern": "DIGITALOCEAN.COM",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_daycare",
+            "pattern": "FRIENDSHIP HOUSE ONLIN.*",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "income_tax_refund",
+            "pattern": "IRS.*TREAS.*310.*TAX.*REFPPD.*ID:.*9111036170",
+            "account": "checking_savings",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_tax_refund",
+            "pattern": "State of Ill Tax RefundPPD.*",
+            "account": "checking_savings",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_tax_refund",
+            "pattern": "State.*of.*Ill.*Tax.*RefundPPD.*ID:.*1376002057",
+            "account": "checking_savings",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "expense_media",
+            "pattern": "Amazon Digital Svcs",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "WALMART.COM.*",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "Etsy.com - TheAntebellumB",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_groceries",
+            "pattern": "JEWEL.*",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_digital_service",
+            "pattern": "HLU.Hulu.*",
+            "account": "credit_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "income_refund",
+            "pattern": "HLU.Hulu.*",
+            "account": "credit_bills",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_home_cleaning",
+            "pattern": "CHECK 864",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_home_cleaning",
+            "pattern": "CHECK 871",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_home_cleaning",
+            "pattern": "CHECK 868",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_bill_home_cleaning",
+            "pattern": "CHECK 866",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_misc",
+            "pattern": "CHECK 854",
+            "account": "checking_bills",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "income_gifts",
+            "pattern": "DEPOSIT ID NUMBER 712489",
+            "account": "checking_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "income_gifts",
+            "pattern": "DEPOSIT.*ID.*NUMBER.*712489",
+            "account": "checking_spending",
+            "direction": "income"
+        },
+        {
+            "id": "",
+            "name": "expense_preschool_misc",
+            "pattern": "CHECK 1358",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_preschool_misc",
+            "pattern": "CHECK 1356",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_preschool_misc",
+            "pattern": "CHECK 1355",
+            "account": "checking_spending",
+            "direction": "expense"
+        },
+        {
+            "id": "",
+            "name": "expense_preschool_misc",
+            "pattern": "CHECK 1354",
+            "account": "checking_spending",
+            "direction": "expense"
+        }
+    ]
+}
