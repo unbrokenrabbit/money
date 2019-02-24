@@ -1,3 +1,4 @@
+
 from pymongo import MongoClient
 import pymongo
 import datastore.transaction as trans
@@ -120,11 +121,24 @@ class MongoManager:
         results = db.transactions.update( where_clause, update_clause )
 
 
-    def retrieve_transactions( _self ):
+    def retrieve_transactions( _self, _start_date=None, _end_date=None ):
         db = _self.get_database()
         
+        sort_clause = [
+            ( 'date', -1 )
+        ]
         transactions = []
-        results = db.transactions.find().sort( [ ( 'date', -1 ) ] )
+        if( ( _start_date is not None ) and ( _end_date is not None ) ):
+            match_clause = {
+                'date': {
+                    '$lt': _end_date,
+                    '$gte': _start_date
+                }
+            }
+            results = db.transactions.find( match_clause ).sort( sort_clause )
+        else:
+            results = db.transactions.find().sort( sort_clause )
+
         for result in results:
             transaction = trans.Transaction()
             transaction.from_dict( result )
@@ -164,7 +178,159 @@ class MongoManager:
             transaction.from_dict( result )
             transactions.append( transaction )
 
-        return transactions       
+        return transactions
+
+
+    def get_distinct_expenses( _self, _start_date, _end_date ):
+        db = _self.get_database()
+
+        matches_clause = {
+            '$and':
+            [
+                { 'date': { '$gte': _start_date } },
+                { 'date': { '$lt': _end_date } },
+                { 'bucket': { '$regex': 'expense_.*' } }
+            ]
+        }
+        group_clause = {
+            '_id': '$bucket',
+            'total': { '$sum': '$amount' }
+        }
+        #aggregation_results = db.test_transactions.aggregate(
+        aggregation_results = db.transactions.aggregate(
+            [
+                { '$match': matches_clause },
+                { '$group': group_clause },
+                { '$sort': { 'total': 1 } }
+            ]
+        )
+        aggregation_result_count = 0
+        distinct_expenses = []
+        for result in aggregation_results:
+            aggregation_result_count += 1
+            #distinct_expense = CategorizedTotal()
+            #distinct_expense.tag = result[ '_id' ]
+            #distinct_expense.total = result[ 'total' ]
+
+            #distinct_expenses.append( distinct_expense )
+            distinct_expense = {
+                'name': result[ '_id' ],
+                'total': ( result[ 'total' ] * -1 )
+            }
+            distinct_expenses.append( distinct_expense )
+            #distinct_expenses.append( result )
+
+        return distinct_expenses
+
+
+    def get_distinct_incomes( _self, _start_date, _end_date ):
+        db = _self.get_database()
+
+        matches_clause = {
+            '$and':
+            [
+                { 'date': { '$gte': _start_date } },
+                { 'date': { '$lt': _end_date } },
+                { 'bucket': { '$regex': 'income_.*' } }
+            ]
+        }
+        group_clause = {
+            '_id': '$bucket',
+            'total': { '$sum': '$amount' }
+        }
+        #aggregation_results = db.test_transactions.aggregate(
+        aggregation_results = db.transactions.aggregate(
+            [
+                { '$match': matches_clause },
+                { '$group': group_clause },
+                { '$sort': { 'total': -1 } }
+            ]
+        )
+        aggregation_result_count = 0
+        distinct_incomes = []
+        for result in aggregation_results:
+            aggregation_result_count += 1
+
+            distinct_income = {
+                'name': result[ '_id' ],
+                'total': ( result[ 'total' ] )
+            }
+            distinct_incomes.append( distinct_income )
+
+        return distinct_incomes
+
+
+    def get_expense_total( _self, _start_date, _end_date ):
+        expense_total = 0
+        db = _self.get_database()
+
+        matches_clause = {
+            '$and':
+            [
+                { 'date': { '$gte': _start_date } },
+                { 'date': { '$lt': _end_date } },
+                { 'bucket': { '$regex': 'expense_.*' } }
+            ]
+        }
+        group_clause = {
+            '_id': '$bucket',
+            'total': { '$sum': '$amount' }
+        }
+        group_clause_2 = {
+            '_id': '_id',
+            'total': { '$sum': '$total' }
+        }
+        #aggregation_results = db.test_transactions.aggregate(
+        aggregation_results = db.transactions.aggregate(
+            [
+                { '$match': matches_clause },
+                { '$group': group_clause },
+                { '$sort': { 'total': 1 } },
+                { '$group': group_clause_2 }
+            ]
+        )
+        aggregation_result_count = 0
+        distinct_expenses = []
+        for result in aggregation_results:
+            aggregation_result_count += 1
+            expense_total += ( result[ 'total' ] * -1 )
+
+        return expense_total
+
+
+    def get_income_total( _self, _start_date, _end_date ):
+        income_total = 0
+        db = _self.get_database()
+
+        matches_clause = {
+            '$and':
+            [
+                { 'date': { '$gte': _start_date } },
+                { 'date': { '$lt': _end_date } },
+                { 'bucket': { '$regex': 'income_.*' } }
+            ]
+        }
+        group_clause = {
+            '_id': '$bucket',
+            'total': { '$sum': '$amount' }
+        }
+        group_clause_2 = {
+            '_id': '_id',
+            'total': { '$sum': '$total' }
+        }
+        #aggregation_results = db.test_transactions.aggregate(
+        aggregation_results = db.transactions.aggregate(
+            [
+                { '$match': matches_clause },
+                { '$group': group_clause },
+                { '$sort': { 'total': 1 } },
+                { '$group': group_clause_2 }
+            ]
+        )
+        for result in aggregation_results:
+            income_total += ( result[ 'total' ] )
+
+        return income_total
 
 
     def remove_all_transactions( _self ):
@@ -252,6 +418,15 @@ class MongoManager:
                 buckets.append( bucket )
 
         return buckets
+
+    def get_expense_bucket_totals( _self, _start_date, _end_date ):
+        bucket_totals = [
+            { '_id': 'expense_misc', 'total': 3024.17 },
+            { '_id': 'expense_dining', 'total': 1258.21 },
+            { '_id': 'expense_clothing', 'total': 456.23 }
+        ]
+
+        return bucket_totals
 
     def get_accounts( _self ):
         # TODO implement

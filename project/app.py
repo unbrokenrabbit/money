@@ -229,12 +229,130 @@ def import_buckets():
             debug=debug
     )
 
+import datetime
+
+@app.route( '/breakdown' )
+def _breakdown():
+    datastore = get_datastore()
+    
+    years = {}
+    months = []
+    debug = []
+
+    min_date = datetime.datetime( 2017, 1, 1 )
+    max_date = datetime.datetime.now()
+
+    current_month_start = datetime.datetime( max_date.year, max_date.month, 1 )
+    next_month_start = current_month_start + datetime.timedelta( days=31 )
+    next_month_start = next_month_start.replace( day=1 )
+    while( current_month_start > min_date ):
+        current_month = {}
+        current_month[ 'title' ] = current_month_start.strftime( '%B %Y' )
+        current_month[ 'transactions' ] = datastore.retrieve_transactions(
+                _start_date=current_month_start,
+                _end_date=next_month_start
+        )
+        current_month[ 'distinct_expenses' ] = datastore.get_distinct_expenses(
+                _start_date=current_month_start,
+                _end_date=next_month_start
+        )
+        if( len( current_month[ 'distinct_expenses' ] ) > 0 ):
+            current_month[ 'distinct_expenses_max' ] = ( int( current_month[ 'distinct_expenses' ][ 0 ][ 'total' ] / 1000 ) + 1 ) * 1000
+        else:
+            current_month[ 'distinct_expenses_max' ] = 0
+
+        current_month[ 'expense_total' ] = datastore.get_expense_total(
+                _start_date=current_month_start,
+                _end_date=next_month_start
+        )
+
+        current_month[ 'distinct_incomes' ] = datastore.get_distinct_incomes(
+                _start_date=current_month_start,
+                _end_date=next_month_start
+        )
+        if( len( current_month[ 'distinct_incomes' ] ) > 0 ):
+            current_month[ 'distinct_incomes_max' ] = ( int( current_month[ 'distinct_incomes' ][ 0 ][ 'total' ] / 1000 ) + 1 ) * 1000
+        else:
+            current_month[ 'distinct_incomes_max' ] = 0
+
+        current_month[ 'income_total' ] = datastore.get_income_total(
+                _start_date=current_month_start,
+                _end_date=next_month_start
+        )
+
+        months.append( current_month )
+
+        if( current_month_start.year in years ):
+            current_year = years[ current_month_start.year ]
+        else:
+            current_year = {
+                'monthly_income_totals': [],
+                'monthly_expense_totals': []
+            }
+            for month in range( 12 ):
+                current_year[ 'monthly_income_totals' ].append( 0 )
+                current_year[ 'monthly_expense_totals' ].append( 0 )
+
+        month_index = current_month_start.month - 1
+        current_year[ 'monthly_income_totals' ][ month_index ] = datastore.get_income_total( current_month_start, next_month_start )
+        current_year[ 'monthly_expense_totals' ][ month_index ] = datastore.get_expense_total( current_month_start, next_month_start )
+
+        years[ current_month_start.year ] = current_year
+
+        delta = datetime.timedelta( days=1 )
+        current_month_start = current_month_start - delta
+        current_month_start = current_month_start.replace( day=1 )
+        next_month_start = next_month_start - delta
+        next_month_start = next_month_start.replace( day=1 )
+
+    yearly_breakdowns = []
+    for key in years:
+        monthly_income_max = max( years[ key ][ 'monthly_income_totals' ] )
+        monthly_expense_max = max( years[ key ][ 'monthly_expense_totals' ] )
+        maximums = [ monthly_income_max, monthly_expense_max ]
+        yearly_breakdown = {
+            'year': key,
+            'monthly_income_totals': years[ key ][ 'monthly_income_totals' ],
+            'monthly_income_max': monthly_income_max,
+            'monthly_expense_totals': years[ key ][ 'monthly_expense_totals' ],
+            'monthly_expense_max': monthly_expense_max,
+            'overall_max': max( maximums ),
+            'income_total': sum( years[ key ][ 'monthly_income_totals' ] ),
+            'expense_total': sum( years[ key ][ 'monthly_expense_totals' ] )
+        }
+        yearly_breakdowns.append( yearly_breakdown )
+
+    return render_template(
+            'breakdown.html',
+            max=300,
+            monthly_breakdowns=months,
+            yearly_breakdowns=yearly_breakdowns,
+            debug=yearly_breakdowns
+    )
+
 @app.route( '/debug' )
 def debug():
     datastore = get_datastore()
+
     transactions = datastore.retrieve_transactions()
 
-    return render_template( 'debug.html', transactions=transactions )
+    labels = [
+        'label1',
+        'label2'
+    ]
+
+    values = [
+        100,
+        200
+    ]
+
+    return render_template(
+            'debug.html',
+            transactions=transactions,
+            max=300,
+            labels=labels,
+            values=values
+    )
 
 
 @app.route( '/debug-remove-all-transactions', methods=['GET', 'POST'] )

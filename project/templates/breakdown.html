@@ -1,0 +1,203 @@
+{% extends "navigation.html" %}
+
+{% block content %}
+<h1>Yearly Breakdown</h1>
+<br/>
+{#
+{{ debug }}
+<br/>
+#}
+{% for yearly_breakdown in yearly_breakdowns %}
+    <hr/>
+    <h3>{{ yearly_breakdown.year }}</h3>
+    <table>
+        <tr>
+            <td>Income:</td>
+            <td align='right'>{{ "{0:.2f}".format( yearly_breakdown.income_total ) }}</td>
+        </tr>
+        <tr>
+            <td>Expenses:</td>
+            <td align='right'>{{ "{0:.2f}".format( yearly_breakdown.expense_total ) }}</td>
+        </tr>
+        <tr>
+            <td>Delta:</td>
+            <td align='right'>{{ "{0:.2f}".format( yearly_breakdown.income_total - yearly_breakdown.expense_total ) }}</td>
+        </tr>
+    </table>
+    <canvas id="yearly_breakdown{{ yearly_breakdown.year }}" width="600" height="400"></canvas>
+    <br/>
+    <script>
+      // bar chart data
+      var barData = {
+        labels : [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec"
+        ],
+        datasets : [
+          {
+            fillColor: "rgba(0,255,0,0.2)",
+            strokeColor: "rgba(0,255,0,1)",
+            pointColor: "rgba(0,255,0,1)",
+            data : [
+              {% for monthly_income_total in yearly_breakdown.monthly_income_totals %}
+                 "{{ monthly_income_total }}",
+                {% endfor %}
+              ]
+          },
+          {
+            fillColor: "rgba(255,0,0,0.2)",
+            strokeColor: "rgba(255,0,0,1)",
+            pointColor: "rgba(255,0,0,0,1)",
+            data : [
+              {% for monthly_expense_total in yearly_breakdown.monthly_expense_totals %}
+                 "{{ monthly_expense_total }}",
+                {% endfor %}
+              ]
+          }
+        ]
+      }
+     // get bar chart canvas
+     var mychart = document.getElementById("yearly_breakdown{{ yearly_breakdown.year }}").getContext("2d");
+       steps = {{ yearly_breakdown.overall_max / 1000 }}
+       max = {{ yearly_breakdown.overall_max }}
+     // draw bar chart
+     new Chart(mychart).Bar(barData, {
+       scaleOverride: true,
+       scaleSteps: steps,
+       scaleStepWidth: Math.ceil(max / steps),
+       scaleStartValue: 0,
+       scaleShowVerticalLines: true,
+       scaleShowGridLines : true,
+       barShowStroke : true,
+       scaleShowLabels: true
+       }
+     );
+    </script>
+{% endfor %}
+<h1>Monthly Breakdown</h1>
+{% for monthly_breakdown in monthly_breakdowns %}
+    <hr/>
+    <h2>{{ monthly_breakdown.title }}</h2>
+    <table>
+        <tr>
+            <td>Income:</td>
+            <td align='right'>{{ "{0:.2f}".format( monthly_breakdown.income_total ) }}</td>
+        </tr>
+        <tr>
+            <td>Expenses:</td>
+            <td align='right'>{{ "{0:.2f}".format( monthly_breakdown.expense_total ) }}</td>
+        </tr>
+        <tr>
+            <td>Delta:</td>
+            <td align='right'>{{ "{0:.2f}".format( monthly_breakdown.income_total - monthly_breakdown.expense_total ) }}</td>
+        </tr>
+    </table>
+    <canvas id="{{ monthly_breakdown.title }}" width="600" height="400"></canvas>
+    <br/>
+    <script>
+      // bar chart data
+      var barData = {
+        labels : [
+          {% for distinct_expense in monthly_breakdown.distinct_expenses %}
+           "{{ distinct_expense[ 'name' ] }}",
+          {% endfor %}
+        ],
+        datasets : [{
+          fillColor: "rgba(151,187,205,0.2)",
+          strokeColor: "rgba(151,187,205,1)",
+          pointColor: "rgba(151,187,205,1)",
+          data : [
+            {% for distinct_expense in monthly_breakdown.distinct_expenses %}
+               "{{ distinct_expense[ 'total' ] }}",
+              {% endfor %}
+            ]
+          }
+        ]
+      }
+     // get bar chart canvas
+     var mychart = document.getElementById("{{ monthly_breakdown.title }}").getContext("2d");
+       steps = {{ monthly_breakdown.distinct_expenses_max / 1000 }}
+       max = {{ monthly_breakdown.distinct_expenses_max }}
+     // draw bar chart
+     new Chart(mychart).Bar(barData, {
+       scaleOverride: true,
+       scaleSteps: steps,
+       scaleStepWidth: Math.ceil(max / steps),
+       scaleStartValue: 0,
+       scaleShowVerticalLines: true,
+       scaleShowGridLines : true,
+       barShowStroke : true,
+       scaleShowLabels: true
+       }
+     );
+    </script>
+    {#
+    {{ monthly_breakdown.distinct_expenses }}
+    <br/>
+    max: {{ monthly_breakdown.distinct_expenses_max }}
+    #}
+    <h3>Expenses (${{ "{0:.2f}".format( monthly_breakdown.expense_total ) }})</h3>
+    <table>
+        <tr>
+            <th>bucket</th>
+            <th>total</th>
+        </tr>
+        {% for distinct_expense in monthly_breakdown.distinct_expenses %}
+        <tr>
+            <td>{{ distinct_expense.name }}</td>
+            <td align='right'>{{ "{0:.2f}".format( distinct_expense.total ) }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <h3>Income (${{ "{0:.2f}".format( monthly_breakdown.income_total ) }})</h3>
+    <table>
+        <tr>
+            <th>bucket</th>
+            <th>total</th>
+        </tr>
+        {% for distinct_income in monthly_breakdown.distinct_incomes %}
+        <tr>
+            <td>{{ distinct_income.name }}</td>
+            <td align='right'>{{ "{0:.2f}".format( distinct_income.total ) }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {#
+    <h3>Transactions: {{ monthly_breakdown.transactions|length }}</h3>
+    <table>
+        <tr>
+            <th>instance</th>
+            <th>bucket</th>
+            <th>bucket_status</th>
+            <th>account</th>
+            <th>date</th>
+            <th>amount</th>
+            <th>description</th>
+        </tr>
+        {% for transaction in monthly_breakdown.transactions %}
+        <tr>
+            <td>{{ transaction.instance }}</td>
+            <td>{{ transaction.bucket }}</td>
+            <td>{{ transaction.bucket_status }}</td>
+            <td>{{ transaction.account }}</td>
+            <td>{{ transaction.date }}</td>
+            <td>{{ transaction.amount }}</td>
+            <td>{{ transaction.description }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    #}
+{% endfor %}
+<h2>done</h2>
+{% endblock %}
+

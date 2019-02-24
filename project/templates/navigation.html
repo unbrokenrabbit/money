@@ -1,16 +1,21 @@
 <html>
     <head>
-      {% if title %}
-      <title>{{ title }}</title>
-      {% else %}
-      <title>Why did you not provide a title?</title>
-      {% endif %}
+        {% if title %}
+        <title>{{ title }}</title>
+        {% else %}
+        <title>Why did you not provide a title?</title>
+        {% endif %}
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+        <!--
+        <script src="static/Chart.min.js"></script>
+        -->
     </head>
     <body>
         <div>
             <a href="/">Home</a>
             <a href="/import-transactions">Import Transactions</a>
             <a href="/buckets">Buckets</a>
+            <a href="/breakdown">Breakdown</a>
             <a href="/debug">Debug</a>
        </div>
         <hr>
