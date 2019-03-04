@@ -6,17 +6,6 @@ import datastore.bucket as datastore_bucket
 import bson
 
 
-#    def __init__( _self, _database_server ):
-#    def get_bucket_id( _self, _bucket ):
-#    def build_get_bucket_id_query( _self, _bucket ):
-#    def is_bucket_present( _self, _bucket ):
-#    def is_bucket_name_present( _self, _bucket_name ):
-#    def insert_bucket( _self, _bucket_name_id, _bucket_rule_id ):
-#    def insert_bucket_name( _self, _name ):
-#    def insert_bucket_rule( _self, _pattern, _account, _direction ):
-#    def remove_bucket( _self, _id ):
-#    def get_bucket_name_id( _self, _bucket_name ):
-
 class MongoManager:
 
     def get_database( _self ):
@@ -69,21 +58,31 @@ class MongoManager:
         new_transaction_count = 0
         updated_transaction_count = 0
         for transaction in _transactions:
-            document = {}
-            document[ 'account' ] = transaction.account
-            document[ 'date' ] = transaction.date
-            document[ 'amount' ] = transaction.amount
-            document[ 'description' ] = transaction.description
-            document[ 'instance' ] = transaction.instance
-            document[ 'bucket' ] = transaction.bucket
-            document[ 'bucket_status' ] = transaction.bucket_status
+            query = {
+                'account': transaction.account,
+                'amount': transaction.amount,
+                'date': transaction.date,
+                'description': transaction.description,
+                'instance': transaction.instance
+            }
+
+            update = {
+                '$set': {
+                    'account': transaction.account,
+                    'amount': transaction.amount,
+                    'date': transaction.date,
+                    'description': transaction.description,
+                    'instance': transaction.instance
+                },
+                '$setOnInsert': {
+                    'bucket': '',
+                    'bucket_status': 'unapproved'
+                }
+            }
 
             update_result = db.transactions.update(
-                document,
-                document,
-                #{
-                #    "$set": document,
-                #},
+                query,
+                update,
                 upsert = True
             )
 
@@ -97,28 +96,6 @@ class MongoManager:
         result[ 'new_transaction_count' ] = new_transaction_count
         
         return result
-
-    def apply_bucket_to_transaction( _self, _transaction, _bucket, _bucket_state='unapproved' ):
-        db = _self.get_database()
-        
-        where_clause = {
-                'account': _transaction.account,
-                'date': _transaction.date,
-                'amount': _transaction.amount,
-                'description': _transaction.description,
-                'instance': _transaction.instance,
-                'bucket': _transaction.bucket,
-                'bucket_status': _transaction.bucket_status
-        }
-
-        update_clause = {
-                '$set': {
-                    'bucket': _bucket.name,
-                    'bucket_status': _bucket_state
-                }
-        }
-            
-        results = db.transactions.update( where_clause, update_clause )
 
 
     def retrieve_transactions( _self, _start_date=None, _end_date=None ):
