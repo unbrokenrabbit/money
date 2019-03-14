@@ -2,6 +2,19 @@
 
 {% block content %}
 <h1>Debug</h1>
+{{ debug }}
+<br/>
+<form action="{{ url_for( 'debug' ) }}" method="POST">
+    <label>Username</label>
+    <br/>
+    <input type="text" name="username" />
+    <br/>
+    <label>Password</label>
+    <br/>
+    <input type="text" name="password" />
+    <br/>
+    <input type="submit" value="add user" />
+</form>
 <form action="http://localhost:5000/debug-initialize-database" method="post">
     <button name="debug_initialize_database_button" value="debug_initialize_database_button">Initialize Database</button>
 </form>

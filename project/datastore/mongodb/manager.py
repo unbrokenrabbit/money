@@ -446,3 +446,42 @@ class MongoManager:
                 )
 
 
+    def add_user( _self, _username, _password_hash ):
+        db = _self.get_database()
+
+        query = {
+            'username': _username
+        }
+
+        update = {
+            '$set': {
+                'username': _username,
+                'password_hash': _password_hash
+            }
+        }
+
+        db.users.update_one(
+            query,
+            update,
+            upsert=True
+        )
+
+
+    def get_user_password_hash( _self, _username ):
+        password_hash = '-'
+        db = _self.get_database()
+        
+        transactions = []
+        match_clause = {
+            'username': {
+                '$eq': _username
+            }
+        }
+        result = db.users.find_one( match_clause )
+
+        if result is not None:
+            password_hash = result[ 'password_hash' ]
+
+        return password_hash
+
+

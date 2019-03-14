@@ -1,0 +1,27 @@
+{% extends "navigation.html" %}
+
+{% block content %}
+{#{{ debug }}#}
+<form action="{{ url_for( 'login' ) }}" method="POST">
+    <label>Username</label>
+    <br/>
+    <input type="text" name="username" />
+    <br/>
+    <label>Password</label>
+    <br/>
+    <input type="text" name="password" />
+    <br/>
+    <input type="submit" value="login" />
+</form>
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <span>{{ message }}</span>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% endblock %}
+

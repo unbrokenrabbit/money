@@ -1,11 +1,16 @@
 from flask import Flask
+from flask import flash
 from flask import redirect
 from flask import render_template
 from flask import request
 from flask import send_file
 from flask import url_for
+from flask_login import login_required
 from werkzeug import secure_filename
+#from werkzeug.security import generate_password_hash
+import werkzeug.security
 
+import flask_login
 import json
 import mint.importer
 import datastore.factory as datastore_factory
@@ -18,7 +23,37 @@ DATABASE_NAME = 'money_db'
 
 
 app = Flask(__name__)
+app.secret_key = 'bad-secret-key'
+login = flask_login.LoginManager( app )
 app.logger.setLevel( logging.DEBUG )
+
+
+@login.user_loader
+def load_user( _id ):
+    return User( _id )
+
+
+class User():
+    def __init__( _self, _id ):
+        _self.authenticated = False
+        _self.active = False
+        _self.anonymous = False
+        _self.user_id = _id
+
+    def is_authenticated( _self ):
+        return _self.authenticated
+
+    def is_active( _self ):
+        return _self.active
+
+    def is_anonymous( _self ):
+        return _self.anonymous
+
+    def get_id( _self ):
+        return _self.user_id
+
+    def password_matches( _self, _password ):
+        return True
 
 
 def get_datastore():
@@ -26,11 +61,66 @@ def get_datastore():
 
 
 @app.route( '/' )
+@login_required
 def home():
     return render_template( 'home.html' )
 
 
+@app.route( '/login', methods=[ 'GET', 'POST' ] )
+def login():
+    debug = {}
+
+    current_user = flask_login.current_user
+
+    if request.method == 'POST':
+        username = request.form[ 'username' ]
+        password = request.form[ 'password' ]
+        password_hash = werkzeug.security.generate_password_hash( password )
+
+        debug[ 'username' ] = username
+        debug[ 'password' ] = password
+        debug[ 'password_hash' ] = password_hash
+
+        datastore = get_datastore()
+        stored_password_hash = datastore.get_user_password_hash( username )
+
+        debug[ 'stored_password_hash' ] = stored_password_hash
+
+        #if password_hash == stored_password_hash:
+        if werkzeug.security.check_password_hash( stored_password_hash, password ):
+            flask_login.login_user( User( username ) )
+            flash( username + ' logged in' )
+            #current_user = flask_login.current_user
+        else:
+            flash( 'Unable to log in user ' + username )
+
+    #debug[ 'is_authenticated' ] = current_user.is_authenticated()
+    #debug[ 'is_active' ] = current_user.is_active()
+    #debug[ 'is_anonymous' ] = current_user.is_anonymous()
+    #debug[ 'id' ] = current_user.get_id()
+
+    return render_template( 'login-debug.html', debug=debug )
+    #if flask_login.current_user.is_authenticated:
+    #    return redirect( url_for( 'home' ) )
+    #else:
+    #    form = flask_login.LoginForm()
+
+
+@app.route( '/logout' )
+def logout():
+    current_user = flask_login.current_user
+    if current_user is not None:
+        username = current_user.get_id()
+    else:
+        username = 'ERROR'
+
+    flask_login.logout_user()
+
+    return render_template( 'logout-debug.html', username=username )
+        
+
 @app.route( '/import-transactions', methods=['GET', 'POST'] )
+@login_required
 def import_transactions():
     debug = {}
     updated_transaction_count = '0'
@@ -61,6 +151,7 @@ def import_transactions():
 
 
 @app.route( '/add-bucket', methods=['GET', 'POST'] )
+@login_required
 def add_bucket():
     datastore = get_datastore()
 
@@ -105,6 +196,7 @@ def add_bucket():
 
 
 @app.route( '/remove-bucket', methods=['GET', 'POST'] )
+@login_required
 def remove_bucket():
     datastore = get_datastore()
 
@@ -131,6 +223,7 @@ def remove_bucket():
 
 
 @app.route( '/buckets', methods=['GET', 'POST'] )
+@login_required
 def buckets():
     debug = {}
 
@@ -155,6 +248,7 @@ def buckets():
 
 
 @app.route( '/export-buckets', methods=[ 'POST' ] )
+@login_required
 def export_buckets():
     datastore = get_datastore()
     buckets = datastore.get_buckets()
@@ -175,6 +269,7 @@ def export_buckets():
 
 
 @app.route( '/import-buckets', methods=['GET', 'POST'] )
+@login_required
 def import_buckets():
     datastore = get_datastore()
 
@@ -232,6 +327,7 @@ def import_buckets():
 import datetime
 
 @app.route( '/breakdown' )
+@login_required
 def _breakdown():
     datastore = get_datastore()
     
@@ -330,9 +426,22 @@ def _breakdown():
             debug=yearly_breakdowns
     )
 
-@app.route( '/debug' )
+@app.route( '/debug', methods=['GET', 'POST'] )
+@login_required
 def debug():
+    debug = {}
     datastore = get_datastore()
+
+    if request.method == 'POST':
+        username = request.form[ 'username' ]
+        password = request.form[ 'password' ]
+        password_hash = werkzeug.security.generate_password_hash( password )
+
+        debug[ 'username' ] = username
+        debug[ 'password' ] = password
+        debug[ 'password_hash' ] = password_hash
+
+        datastore.add_user( username, password_hash )
 
     transactions = datastore.retrieve_transactions()
 
@@ -351,11 +460,13 @@ def debug():
             transactions=transactions,
             max=300,
             labels=labels,
-            values=values
+            values=values,
+            debug=debug
     )
 
 
 @app.route( '/debug-remove-all-transactions', methods=['GET', 'POST'] )
+@login_required
 def debug_remove_all_transactions():
     if request.method == 'POST':
         #transactions_removed_count = transactions.importer.remove_all_transactions()
@@ -381,6 +492,7 @@ def debug_remove_all_transactions():
 
 
 @app.route( '/debug-initialize-database', methods=['GET', 'POST'] )
+@login_required
 def debug_initialize_database():
     if request.method == 'POST':
         datastore = get_datastore()
