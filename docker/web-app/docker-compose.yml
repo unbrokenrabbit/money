@@ -16,6 +16,7 @@ services:
         volumes:
             - money-mongodb-data:/data/db
             - money-mongodb-config:/data/configdb
+            - money-mongodb-backup:/backup
         networks:
             - money
     #money-mysql:
@@ -49,8 +50,9 @@ services:
 volumes:
     money-mongodb-data:
     money-mongodb-config:
-    money-mysql-data:
-    money-mysql-test-data:
+    money-mongodb-backup:
+    #money-mysql-data:
+    #money-mysql-test-data:
 networks:
     money:
         #driver: bridge
