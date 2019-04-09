@@ -1,51 +1,29 @@
-version: '3.4'
+version: '3.7'
 services:
     money-flask:
-        container_name: "money-flask"
+        #container_name: "money-flask"
         build: ./money-flask
         ports:
-            - "5000:5000"
+            - "${MONEY_FLASK_WEB_APP_PORT}:5000"
         volumes:
-            - ../../project:/project
+            - type: bind
+              source: ../../project
+              target: /project
         networks:
             - money
         command: python3 /project/app.py
     money-mongodb:
-        container_name: "money-mongodb"
+        #container_name: "money-mongodb"
         image: "mongo:3.6.0"
         volumes:
-            - money-mongodb-data:/data/db
-            - money-mongodb-config:/data/configdb
+            - type: volume
+              source: money-mongodb-data
+              target: /data/db
+            - type: volume
+              source: money-mongodb-config
+              target: /data/configdb
         networks:
             - money
-    #money-mysql:
-    #    container_name: "money-mysql"
-    #    image: "mysql:8.0"
-    #    environment:
-    #        - MYSQL_ROOT_PASSWORD=badpassword
-    #        - MYSQL_DATABASE=money_db
-    #        - MYSQL_USER=money_user
-    #        - MYSQL_PASSWORD=money_password
-    #    #ports:
-    #    #    - "3306:3306"
-    #    volumes:
-    #        - money-mysql-test-data:/var/lib/mysql
-    #    networks:
-    #        - money
-    #money-mysql-test:
-    #    container_name: "money-mysql-test"
-    #    image: "mysql:8.0"
-    #    environment:
-    #        - MYSQL_ROOT_PASSWORD=badpassword
-    #        - MYSQL_DATABASE=money_db
-    #        - MYSQL_USER=money_user
-    #        - MYSQL_PASSWORD=money_password
-    #    #ports:
-    #    #    - "3307:3306"
-    #    volumes:
-    #        - money-mysql-data:/var/lib/mysql
-    #    networks:
-    #        - money
 volumes:
     money-mongodb-data:
     money-mongodb-config:
@@ -53,4 +31,4 @@ volumes:
     money-mysql-test-data:
 networks:
     money:
-        #driver: bridge
+
