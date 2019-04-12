@@ -51,7 +51,38 @@
     <input type="file" name="file" />
     <input type="submit" name="Import"/>
 </form>
-<!--
+<h2>Unbucketed Transactions ({{ unbucketed_transactions|length }})</h2>
+<table>
+    <tr>
+        <th>instance</th>
+        <th>bucket</th>
+        <th>bucket status</th>
+        <th>account</th>
+        <th>type</th>
+        <th>date</th>
+        <th>amount</th>
+        <th>description</th>
+        <th>original description</th>
+        <th>category</th>
+        <th>notes</th>
+    </tr>
+    {% for transaction in unbucketed_transactions %}
+    <tr>
+        <td>{{ transaction.instance }}</td>
+        <td>{{ transaction.bucket }}</td>
+        <td>{{ transaction.bucket_status }}</td>
+        <td>{{ transaction.account }}</td>
+        <td>{{ transaction.type }}</td>
+        <td>{{ transaction.date }}</td>
+        <td>{{ transaction.amount }}</td>
+        <td>[{{ transaction.description }}]</td>
+        <td>{{ transaction.original_description }}</td>
+        <td>{{ transaction.category }}</td>
+        <td>{{ transaction.notes }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br/>
 <h2>Unapproved Transactions</h2>
 <label>table with list of transactions that have been matched to existing buckets.  User must select and approve all correctly allocated buckets.</label>
 <br/>
@@ -85,39 +116,6 @@
     </tr>
     {% endfor %}
 </table>
--->
-<h2>Unbucketed Transactions ({{ unbucketed_transactions|length }})</h2>
-<table>
-    <tr>
-        <th>instance</th>
-        <th>bucket</th>
-        <th>bucket status</th>
-        <th>account</th>
-        <th>type</th>
-        <th>date</th>
-        <th>amount</th>
-        <th>description</th>
-        <th>original description</th>
-        <th>category</th>
-        <th>notes</th>
-    </tr>
-    {% for transaction in unbucketed_transactions %}
-    <tr>
-        <td>{{ transaction.instance }}</td>
-        <td>{{ transaction.bucket }}</td>
-        <td>{{ transaction.bucket_status }}</td>
-        <td>{{ transaction.account }}</td>
-        <td>{{ transaction.type }}</td>
-        <td>{{ transaction.date }}</td>
-        <td>{{ transaction.amount }}</td>
-        <td>[{{ transaction.description }}]</td>
-        <td>{{ transaction.original_description }}</td>
-        <td>{{ transaction.category }}</td>
-        <td>{{ transaction.notes }}</td>
-    </tr>
-    {% endfor %}
-</table>
-<br/>
 <h2>Buckets</h2>
 <label>table of all buckets</label>
 <br/>
