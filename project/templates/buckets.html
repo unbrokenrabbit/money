@@ -88,6 +88,7 @@
 <br/>
 <table>
     <tr>
+        <th>approve</th>
         <th>instance</th>
         <th>bucket</th>
         <th>bucket status</th>
@@ -102,6 +103,7 @@
     </tr>
     {% for transaction in unapproved_transactions %}
     <tr>
+        <td><input type="checkbox"/></td>
         <td>{{ transaction.instance }}</td>
         <td>{{ transaction.bucket }}</td>
         <td>{{ transaction.bucket_status }}</td>
