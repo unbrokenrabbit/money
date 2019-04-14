@@ -89,7 +89,7 @@
 <table>
     <tr>
         <th>
-            <input type="checkbox"/>
+            <input id="checkbox_select_all_unapproved_transactions" type="checkbox"/>
             <label>All / None</label>
         </th>
         <th>instance</th>
@@ -106,7 +106,7 @@
     </tr>
     {% for transaction in unapproved_transactions %}
     <tr>
-        <td><input type="checkbox"/></td>
+        <td><input id="checkbox_unapproved_transaction_{{transaction.}}" type="checkbox"/></td>
         <td>{{ transaction.instance }}</td>
         <td>{{ transaction.bucket }}</td>
         <td>{{ transaction.bucket_status }}</td>
