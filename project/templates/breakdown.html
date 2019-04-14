@@ -118,8 +118,8 @@
           pointColor: "rgba(151,187,205,1)",
           data : [
             {% for distinct_expense in monthly_breakdown.distinct_expenses %}
-               "{{ distinct_expense[ 'total' ] }}",
-              {% endfor %}
+              "{{ distinct_expense[ 'total' ] }}",
+            {% endfor %}
             ]
           }
         ]
@@ -147,20 +147,27 @@
     max: {{ monthly_breakdown.distinct_expenses_max }}
     #}
     <h3>Expenses (${{ "{0:.2f}".format( monthly_breakdown.expense_total ) }})</h3>
-    <table>
+    <table id="table_{{ monthly_breakdown.title }}">
         <tr>
             <th>bucket</th>
             <th>total</th>
         </tr>
         {% for distinct_expense in monthly_breakdown.distinct_expenses %}
-        <tr>
-            <td>{{ distinct_expense.name }}</td>
-            <td align='right'>{{ "{0:.2f}".format( distinct_expense.total ) }}</td>
-        </tr>
+            <tr id="{{ distinct_expense.name }}_row" onclick="expand_collapse( 'collapsable_{{ monthly_breakdown.title + distinct_expense.name }}', 'table_{{ monthly_breakdown.title }}' )">
+                <td>{{ distinct_expense.name }}</td>
+                <td align='right'>{{ "{0:.2f}".format( distinct_expense.total ) }}</td>
+            </tr>
+            
+            {% for bucketed_transaction in monthly_breakdown.bucketed_transactions[ distinct_expense.name ] %}
+                <tr name="collapsable_{{ monthly_breakdown.title + distinct_expense.name }}">
+                    <td>- {{ bucketed_transaction.description }}</td>
+                    <td align='right'>{{ "{0:.2f}".format( bucketed_transaction.amount ) }}</td>
+                </tr>
+            {% endfor %}
         {% endfor %}
     </table>
     <h3>Income (${{ "{0:.2f}".format( monthly_breakdown.income_total ) }})</h3>
-    <table>
+    <table id="">
         <tr>
             <th>bucket</th>
             <th>total</th>
@@ -199,5 +206,33 @@
     #}
 {% endfor %}
 <h2>done</h2>
+<script>
+    window.onload = function() {
+        var rows = document.getElementsByTagName( "tr" );
+        for( var index = 0; index < rows.length; index++ ) {
+            if( rows[index].getAttribute( "name" ) ) {
+                if( rows[index].getAttribute( "name" ).startsWith( "collapsable_" ) ) {
+                    rows[index].style.display = "none";
+                }
+            }
+        }
+    }
+
+    function expand_collapse( _elementsName, _tableId ) {
+        var elements = document.getElementsByName( _elementsName );
+        for(var j = 0; j< elements.length;j++){
+            var currentState = elements[j].style.display;
+            if( currentState=="none"){
+                elements[j].style.display="block";
+            }
+            else {
+                elements[j].style.display="none";
+            }
+        }
+        //var table = document.getElementById( _tableId );
+        //table.refresh();
+        //table.style.display="none";
+    }
+</script>
 {% endblock %}
 

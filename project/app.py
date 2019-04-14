@@ -357,6 +357,12 @@ def _breakdown():
         else:
             current_month[ 'distinct_expenses_max' ] = 0
 
+        current_month[ 'bucketed_transactions' ] = {}
+        for transaction in current_month[ 'transactions' ]:
+            if( transaction.bucket not in current_month[ 'bucketed_transactions' ] ):
+                current_month[ 'bucketed_transactions' ][ transaction.bucket ] = []
+            current_month[ 'bucketed_transactions' ][ transaction.bucket ].append( transaction )
+
         current_month[ 'expense_total' ] = datastore.get_expense_total(
                 _start_date=current_month_start,
                 _end_date=next_month_start
