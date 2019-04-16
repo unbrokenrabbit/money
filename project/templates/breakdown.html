@@ -2,6 +2,7 @@
 
 {% block content %}
 <h1>Yearly Breakdown</h1>
+<div id="like_button_container"></div>
 <br/>
 {#
 {{ debug }}
@@ -206,7 +207,6 @@
     #}
 {% endfor %}
 <h2>done</h2>
-<div id="like_button_container"></div>
 <script>
     window.onload = function() {
         var rows = document.getElementsByTagName( "tr" );
